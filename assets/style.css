@@ -29,8 +29,20 @@ body {
     padding: 20px;
     width: 175px;
     height: 150px;
+    box-shadow: 10px 10px 5px rgb(117, 221, 255);
   }
 
+
+  input{
+    border-radius: 25px 50px;
+    background: #e9dcee;
+    padding: 20px;
+    width: 200px;
+    height: 50px;
+    box-shadow: 5px 5px 5px rgb(117, 221, 255);
+  }
+
+  
 
   .Content {
     display: flex;
