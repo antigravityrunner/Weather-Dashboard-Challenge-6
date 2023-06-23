@@ -23,14 +23,6 @@ body {
   }
 
 
-  .box {
-    border-radius: 15px 50px;
-    background: #73AD21;
-    padding: 20px;
-    width: 175px;
-    height: 150px;
-  }
-
   .button{
     border-radius: 15px 50px;
     background: #ba89ce;
