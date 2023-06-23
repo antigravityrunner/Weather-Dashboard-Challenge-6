@@ -18,12 +18,27 @@ body {
     height: 150px;
   }
 
-
-
-
   div {
     box-shadow: 10px 10px 5px rgb(117, 221, 255);
   }
+
+
+  .box {
+    border-radius: 15px 50px;
+    background: #73AD21;
+    padding: 20px;
+    width: 175px;
+    height: 150px;
+  }
+
+  .button{
+    border-radius: 15px 50px;
+    background: #ba89ce;
+    padding: 20px;
+    width: 175px;
+    height: 150px;
+  }
+
 
   .Content {
     display: flex;
