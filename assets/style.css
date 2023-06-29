@@ -4,13 +4,26 @@ body {
     margin: center;
     background-color: #e2c5fa;
   }
-  
+
+
+  /*
+  .center {
+    line-height: 150px;
+    height: 150px;
+    border: 3px solid rgb(235, 224, 77);
+    text-align: center;
+  }
+
+  Need to adjust center header correctly
+
+*/
+
   .header {
     padding: 60px;
     text-align: center;
     display: flex;
     justify-content: space-between;
-    background: #c698d8;
+    background: #ba89ce;
     color: rgb(252, 153, 252);
     text-shadow: 7px 5px 5px rgb(150, 52, 163);
     font-size: 30px;
