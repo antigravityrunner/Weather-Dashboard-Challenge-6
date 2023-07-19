@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Dashboard</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
     <script src="./assets/script.js"></script>
     <link rel="stylesheet" href="./assets/style.css" />
     <link
@@ -33,28 +38,95 @@
     </div>
 
     <div class="Boxes">
-      <div class="day-forecast drop-shadow">
-        <span id="day1-date" class="forcastDate"> Mon. 15</span>
+      <div id="day1" class="day-forecast drop-shadow">
+        <span class="forcastDate"> Mon. 15</span>
         <div class="iconContainer">
           <i class="bi bi-brightness-high dayIcon"></i>
         </div>
         <span class="tempProp" style="padding-top: 0.5rem"
-          ><i class="bi bi-thermometer-half"></i> 74°F</span
+          ><i class="bi bi-thermometer-half"></i>
+          <span class="temp-input">74</span>°F</span
         >
-        <span class="tempProp"><i class="bi bi-wind"></i> 12mph</span>
-        <span class="tempProp"><i class="bi bi-moisture"></i> 54%</span>
+        <span class="tempProp"
+          ><i class="bi bi-wind"></i>
+          <span class="wind-input">12</span>mph</span
+        >
+        <span class="tempProp"
+          ><i class="bi bi-moisture"></i>
+          <span class="temp-humidity">54</span>%</span
+        >
       </div>
-      <div class="day-forecast drop-shadow">
-        <span id="day2-date" class="forcastDate"> Tue. 16</span>
+      <div id="day2" class="day-forecast drop-shadow">
+        <span class="forcastDate"> Tue. 16</span>
+        <div class="iconContainer">
+          <i class="bi bi-brightness-high dayIcon"></i>
+        </div>
+        <span class="tempProp" style="padding-top: 0.5rem"
+          ><i class="bi bi-thermometer-half"></i>
+          <span class="temp-input">74</span>°F</span
+        >
+        <span class="tempProp"
+          ><i class="bi bi-wind"></i>
+          <span class="wind-input">12</span>mph</span
+        >
+        <span class="tempProp"
+          ><i class="bi bi-moisture"></i>
+          <span class="temp-humidity">54</span>%</span
+        >
       </div>
-      <div class="day-forecast drop-shadow">
-        <span id="day3-date" class="forcastDate"> Wen. 17</span>
+      <div id="day3" class="day-forecast drop-shadow">
+        <span class="forcastDate"> Wen. 17</span>
+        <div class="iconContainer">
+          <i class="bi bi-brightness-high dayIcon"></i>
+        </div>
+        <span class="tempProp" style="padding-top: 0.5rem"
+          ><i class="bi bi-thermometer-half"></i>
+          <span class="temp-input">74</span>°F</span
+        >
+        <span class="tempProp"
+          ><i class="bi bi-wind"></i>
+          <span class="wind-input">12</span>mph</span
+        >
+        <span class="tempProp"
+          ><i class="bi bi-moisture"></i>
+          <span class="temp-humidity">54</span>%</span
+        >
       </div>
-      <div class="day-forecast drop-shadow">
-        <span id="day4-date" class="forcastDate"> Thurs. 18</span>
+      <div id="day4" class="day-forecast drop-shadow">
+        <span class="forcastDate"> Thurs. 18</span>
+        <div class="iconContainer">
+          <i class="bi bi-brightness-high dayIcon"></i>
+        </div>
+        <span class="tempProp" style="padding-top: 0.5rem"
+          ><i class="bi bi-thermometer-half"></i>
+          <span class="temp-input">74</span>°F</span
+        >
+        <span class="tempProp"
+          ><i class="bi bi-wind"></i>
+          <span class="wind-input">12</span>mph</span
+        >
+        <span class="tempProp"
+          ><i class="bi bi-moisture"></i>
+          <span class="temp-humidity">54</span>%</span
+        >
       </div>
-      <div class="day-forecast drop-shadow">
-        <span id="day5-date" class="forcastDate"> Fri. 19</span>
+      <div id="day5" class="day-forecast drop-shadow">
+        <span class="forcastDate"> Fri. 19</span>
+        <div class="iconContainer">
+          <i class="bi bi-brightness-high dayIcon"></i>
+        </div>
+        <span class="tempProp" style="padding-top: 0.5rem"
+          ><i class="bi bi-thermometer-half"></i>
+          <span class="temp-input">74</span>°F</span
+        >
+        <span class="tempProp"
+          ><i class="bi bi-wind"></i>
+          <span class="wind-input">12</span>mph</span
+        >
+        <span class="tempProp"
+          ><i class="bi bi-moisture"></i>
+          <span class="temp-humidity">54</span>%</span
+        >
       </div>
     </div>
   </body>
