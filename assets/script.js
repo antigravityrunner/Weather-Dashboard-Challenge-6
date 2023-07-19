@@ -93,7 +93,7 @@ $(function () {
 
 function getWeather(city) {
   fetch(
-    "http://api.openweathermap.org/data/2.5/forecast?q=" +
+    "https://api.openweathermap.org/data/2.5/forecast?q=" +
       city +
       "&units=imperial&appid=b688d370ba81b97331bf7cfd26c725d2"
   ).then(async (res) => {
@@ -102,7 +102,7 @@ function getWeather(city) {
   });
 
   fetch(
-    "http://api.openweathermap.org/data/2.5/weather?q=" +
+    "https://api.openweathermap.org/data/2.5/weather?q=" +
       city +
       "&units=imperial&appid=b688d370ba81b97331bf7cfd26c725d2"
   ).then(async (res) => {
