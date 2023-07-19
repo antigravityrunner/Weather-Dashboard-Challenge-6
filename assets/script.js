@@ -9,6 +9,46 @@
 //   console.log(forecast);
 // });
 
+function setIcon(id, icon) {
+  $(id).removeClass();
+  console.log(icon);
+  if (icon.startsWith("01")) {
+    $(id).addClass("bi bi-brightness-high");
+  }
+
+  if (icon.startsWith("02")) {
+    $(id).addClass("bi bi-cloud-sun");
+  }
+
+  if (icon.startsWith("03")) {
+    $(id).addClass("bi bi-cloudy");
+  }
+
+  if (icon.startsWith("04")) {
+    $(id).addClass("bi bi-clouds");
+  }
+
+  if (icon.startsWith("09")) {
+    $(id).addClass("bi bi-cloud-drizzle");
+  }
+
+  if (icon.startsWith("10")) {
+    $(id).addClass("bi bi-cloud-rain-heavy");
+  }
+
+  if (icon.startsWith("11")) {
+    $(id).addClass("bi bi-cloud-lightning-rain");
+  }
+
+  if (icon.startsWith("13")) {
+    $(id).addClass("bi bi-snow");
+  }
+
+  if (icon.startsWith("50")) {
+    $(id).addClass("bi bi-cloud-fog2");
+  }
+}
+
 const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 function writeForecastToScreen(weatherData) {
@@ -28,6 +68,8 @@ function writeForecastToScreen(weatherData) {
         Math.round(forecast.main.humidity)
       );
 
+      setIcon("#day" + day + " #dayIcon", forecast.weather[0].icon);
+
       day++;
     }
   }
@@ -37,6 +79,7 @@ function writeCurrentToScreen(weatherData) {
   $("#curWeather .temp-input").text(Math.round(weatherData.main.temp));
   $("#curWeather .wind-input").text(Math.round(weatherData.wind.speed));
   $("#curWeather .humid-input").text(Math.round(weatherData.main.humidity));
+  $("#curWeather #dayIcon", weatherData.weather[0].icon);
 }
 
 $(function () {

@@ -84,7 +84,7 @@ body {
   flex-direction: column;
 }
 
-.dayIcon {
+#dayIcon {
   font-size: 36px;
 }
 
